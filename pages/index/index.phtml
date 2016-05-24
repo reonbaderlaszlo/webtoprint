@@ -1,0 +1,56 @@
+<?php echo $header; ?>
+<main class="index">
+	<section class="hero-slider">
+		<div class="container">
+			<ul class="slider">
+				<li class="first">
+					<div class="hero-icon">
+						<img src="/<?php echo $this->config->rootDir; ?>/upload/images/index/hero-slider/hero-icon-1.png" alt="Dummy">
+					</div>
+					<h1>Céges meghívó <span>akció!</span></h1>
+					<p>Maecenas sem tellus, elementum quis mi non, egestas auctor ex. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+					<p class="cheaper">Most csak <span class="price">22<span> Ft/db </span></span>Áfa-val</p>
+					<a href="#" class="btn ghost">Nyomtatás</a>
+				</li>
+			</ul>
+			<div class="big-next">
+				<a href="#" class="next"></a>
+			</div>
+		</div>
+	</section>
+	<section class="what-u-want">
+		<div class="container">
+			<h1 class="heading-1">Mit szeretnél nyomtatni?</h1>
+			<p class="paragraph-1">Maecenas sem tellus, elementum quis mi non, egestas auctor ex. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+			<div class="wrapper">
+				<?php for ($i=0; $i < 4; $i++) { 
+					?>
+						<a href="#">
+							<article>
+								<figure>
+								  	<img src="/<?php echo $this->config->rootDir; ?>/upload/images/index/print/1.png" alt="Dummy">
+								  <figcaption>Naptár</figcaption>
+								</figure>
+							</article>
+						</a>
+						<a href="#">
+							<article>
+								<figure>
+								  	<img src="/<?php echo $this->config->rootDir; ?>/upload/images/index/print/2.png" alt="Dummy">
+								  <figcaption>Névjegy</figcaption>
+								</figure>
+							</article>
+						</a>
+					<?php
+				} ?>
+			</div>
+		</div>
+	</section>
+	<section class="process">
+		<div class="container">
+			<h1 class="heading-1">Hogyan működik?</h1>
+			<p class="paragraph-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nesciunt explicabo earum perferendis ea minima numquam repudiandae deleniti, porro maiores eligendi modi nulla voluptas, iure ipsa quas. Inventore adipisci, praesentium.</p>
+		</div>
+	</section>
+</main>
+<?php echo $footer; ?>

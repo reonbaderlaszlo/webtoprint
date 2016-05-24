@@ -1,0 +1,130 @@
+.index {
+    .hero-slider {
+        background-color: #f57c00;
+        position: relative;
+        top: -65px;
+        color: #fff;
+        width: 100%;
+        overflow-x: hidden;
+
+        .hero-icon {
+            margin-top: 64px;
+        }
+
+        h1 {
+            font-weight: 100;
+            font-size: 48px;
+            line-height: 48px;
+            margin-top: 40px;
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 300;
+            width: 390px;
+            margin-top: 20px;
+        }
+
+        .price {
+            font-weight: 700;
+            font-size: 36px;
+            letter-spacing: 0.025em;
+
+            span {
+                font-size: 16px;
+            }
+        }
+
+        .btn {
+            margin-top: 25px;
+        }
+
+        .slider {
+            li {
+                padding-top: 60px;
+                height: 600px;
+            }
+
+            .first {
+                background: url("../images/index/hero-slider/hero-image-1.png") no-repeat bottom 14px right -10px;
+            }
+        }
+
+        .big-next {
+            height: 600px;
+            background-color: #5c6bc0;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            right: -105%;
+
+            .next {
+                display: block;
+                background: url("../images/index/next-arrow.png") no-repeat center;
+                background-size: 18px auto;
+                height: inherit;
+                width: 60px;
+            }
+        }
+    }
+
+    .what-u-want {
+        position: relative;
+        top: -65px;
+        padding: 40px 0;
+
+        figure {
+            margin: 0;
+        }
+
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40px;
+            font-weight: 300;
+            padding-top: 3px;
+        }
+
+        a {
+            display: block;
+            width: 220px;
+            height: 130px;
+            float: left;
+            margin-right: 20px;
+            position: relative;
+            color: #282828;
+            text-align: center;
+
+            &:nth-child(4n) {
+                margin-right: 0;
+            }
+
+            &:nth-child(-n+4) {
+                box-shadow: 0 1px #cfd8dc;
+                margin-bottom: 20px;
+            }
+        }
+
+        img {
+            position: absolute;
+            top: 47%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.process {
+	padding: 40px 0;
+    position: relative;
+    top: -65px;
+    background-color: #eaeaea;
+    height: 540px;
+}

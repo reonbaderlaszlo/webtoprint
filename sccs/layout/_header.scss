@@ -1,0 +1,43 @@
+header {
+    height: 60px;
+    position: relative;
+    z-index: 1;
+
+    .logo {
+        display: block;
+        width: 97px;
+        height: 22px;
+        background: url("../images/header/logo.png") no-repeat center;
+        background-size: contain;
+        margin-top: 43px;
+        float: left;
+    }
+
+    .nav-icon {
+        width: 23px;
+        height: 16px;
+        margin-right: 28px;
+
+        span {
+            display: block;
+            height: 3px;
+            background-color: #fff;
+            width: inherit;
+            margin-bottom: 3px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .nav-icon, .profile-icon{
+    	margin-top: 45px;
+    	float: right;
+    }
+    .profile-icon{
+    	width: 16px;
+    	height: 16px;
+    	background: url('../images/header/profile.png') no-repeat center;
+    	background-size: contain;
+    }
+}
