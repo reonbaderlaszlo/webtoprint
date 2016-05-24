@@ -1,0 +1,57 @@
+footer {
+    height: 140px;
+
+    a {
+        display: block;
+        float: left;
+    }
+
+    .footer-logo {
+        width: 97px;
+        height: 22px;
+        background: url("../images/footer/footer-logo.png") no-repeat center;
+        background-size: contain;
+        margin-top: 61px;
+    }
+
+    .cib {
+        width: 130px;
+        height: 32px;
+        background: url("../images/footer/cib.png") no-repeat center;
+        background-size: contain;
+        margin: 56px 6px 0 0;
+    }
+
+    .visa {
+        width: 52px;
+        height: 16px;
+        background: url("../images/footer/visa.png") no-repeat center;
+        background-size: contain;
+        margin: 64px 18px 0 0;
+    }
+
+    .mastercard {
+        width: 32px;
+        height: 19px;
+        background: url("../images/footer/mastercard.png") no-repeat center;
+        background-size: contain;
+        margin: 62px 0 0 0;
+    }
+	nav{
+		float: left;
+		margin: 62px 75px 0 225px;
+	}
+    li {
+        float: left;
+        margin-right: 15px;
+        &:last-child{
+        	margin-right: 0;
+        }
+
+        a {
+            font-size: 14px;
+            font-weight: 300;
+            color: #282828;
+        }
+    }
+}
