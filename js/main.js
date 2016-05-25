@@ -1,4 +1,5 @@
 $(function() {
+    
     $('.process .navigation a').on('click', function(e) {
 
         e.preventDefault();
@@ -9,58 +10,58 @@ $(function() {
 
     });
 
-    $('.hero-slider .slider li').first().css('display','block');
+    $('.hero-slider .slider li').first().css('display', 'block');
 
     $('.big-next').on('click', function(e) {
 
         e.preventDefault();
 
-    	if ($('.hero-slider .slider li.active').next().length) {
+        if ($('.hero-slider .slider li.active').next().length) {
 
-    		$('.hero-slider .slider li').fadeOut(500);
+            $('.hero-slider .slider li').fadeOut(250);
 
-            $('.hero-slider .slider').find('li.active').removeClass('active').next().addClass('active').fadeIn(500);
+            $('.hero-slider .slider').find('li.active').removeClass('active').next().addClass('active').fadeIn(250);
 
 
         } else {
 
-        	$('.hero-slider .slider li').removeClass('active').fadeOut(500);
+            $('.hero-slider .slider li').removeClass('active').fadeOut(250);
 
-            $('.hero-slider .slider li').first().addClass('active').fadeIn(500);
+            $('.hero-slider .slider li').first().addClass('active').fadeIn(250);
 
         }
 
-    	if($('.hero-slider .slider .s-1').hasClass('active')){
+        if ($('.hero-slider .slider .s-1').hasClass('active')) {
 
-    		$('#index .hero-slider').css({
+            $('#index .hero-slider').css({
 
-    			'background-color': '#f57c00'
+                'background-color': '#f57c00'
 
-    		});
+            });
 
-    		$('#index .hero-slider .big-next').css({
+            $('#index .hero-slider .big-next').css({
 
-    			'background-color': '#5c6bc0'
+                'background-color': '#5c6bc0'
 
-    		});
+            });
 
-    	}
+        }
 
-    	if($('.hero-slider .slider .s-2').hasClass('active')){
+        if ($('.hero-slider .slider .s-2').hasClass('active')) {
 
-    		$('#index .hero-slider').css({
+            $('#index .hero-slider').css({
 
-    			'background-color': '#5c6bc0'
+                'background-color': '#5c6bc0'
 
-    		});
+            });
 
-    		$('#index .hero-slider .big-next').css({
+            $('#index .hero-slider .big-next').css({
 
-    			'background-color': '#f57c00'
+                'background-color': '#f57c00'
 
-    		});
+            });
 
-    	}     
+        }
 
     });
 

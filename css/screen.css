@@ -156,51 +156,24 @@ td {
   border: solid 1px #fff;
 }
 
+.btn.ghost:hover {
+  background-color: #fff;
+  color: #282828;
+}
+
 .btn.black {
   background-color: #282828;
 }
 
+.btn.black:hover {
+  background-color: transparent;
+  border: 1px solid #282828;
+  color: #282828;
+}
+
 /* ANIMATIONS */
-.transition-all, .btn, footer a, #index .what-u-want a, #index .process .navigation a {
+.transition-all, .btn, footer a, #index .hero-slider .big-next, #index .what-u-want a, #index .process .navigation a {
   transition: all 0.5s ease;
-}
-
-@-webkit-keyframes shake {
-  10%, 90% {
-    -webkit-transform: translate3d(-1px, 0, 0);
-            transform: translate3d(-1px, 0, 0);
-  }
-  20%, 80% {
-    -webkit-transform: translate3d(2px, 0, 0);
-            transform: translate3d(2px, 0, 0);
-  }
-  30%, 50%, 70% {
-    -webkit-transform: translate3d(-4px, 0, 0);
-            transform: translate3d(-4px, 0, 0);
-  }
-  40%, 60% {
-    -webkit-transform: translate3d(4px, 0, 0);
-            transform: translate3d(4px, 0, 0);
-  }
-}
-
-@keyframes shake {
-  10%, 90% {
-    -webkit-transform: translate3d(-1px, 0, 0);
-            transform: translate3d(-1px, 0, 0);
-  }
-  20%, 80% {
-    -webkit-transform: translate3d(2px, 0, 0);
-            transform: translate3d(2px, 0, 0);
-  }
-  30%, 50%, 70% {
-    -webkit-transform: translate3d(-4px, 0, 0);
-            transform: translate3d(-4px, 0, 0);
-  }
-  40%, 60% {
-    -webkit-transform: translate3d(4px, 0, 0);
-            transform: translate3d(4px, 0, 0);
-  }
 }
 
 /* BASE */
@@ -398,7 +371,7 @@ footer li:last-child {
 }
 
 #index .hero-slider .slider .s-1 {
-  background: url("../images/index/hero-slider/hero-image-1.png") no-repeat bottom 14px right -10px;
+  background: url("../images/index/hero-slider/hero-image-1.png") no-repeat bottom 14px right -31px;
 }
 
 #index .hero-slider .slider .s-2 {
@@ -416,15 +389,11 @@ footer li:last-child {
   top: 0;
   right: -120px;
   z-index: 1;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  transition-duration: 0.2s;
 }
 
 #index .hero-slider .big-next:hover {
-  -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-          animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  background-size: 25px auto;
 }
 
 #index .what-u-want {
@@ -578,6 +547,7 @@ footer li:last-child {
   width: 64px;
   height: 64px;
   line-height: 60px;
+  margin-left: -16px;
   background-color: #fff;
   border: solid 4px #bdbdbd;
   color: #282828;

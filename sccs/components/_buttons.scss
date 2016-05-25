@@ -14,8 +14,17 @@
 
     &.ghost {
         border: solid 1px #fff;
+        &:hover{
+            background-color: #fff;
+            color: #282828;
+        }
     }
     &.black{
         background-color: #282828;
+        &:hover{
+            background-color: transparent;
+            border: 1px solid #282828;
+            color: #282828;
+        }
     }
 }
