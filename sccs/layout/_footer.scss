@@ -1,9 +1,18 @@
+/* FOOTER */
+
 footer {
     height: 140px;
 
     a {
         display: block;
         float: left;
+        font-size: 14px;
+        font-weight: 300;
+        color: #282828;
+        @extend .transition-all;
+        &:hover{
+            color: #f57c00;
+        }
     }
 
     .footer-logo {
@@ -47,11 +56,6 @@ footer {
         &:last-child{
         	margin-right: 0;
         }
-
-        a {
-            font-size: 14px;
-            font-weight: 300;
-            color: #282828;
-        }
+       
     }
 }

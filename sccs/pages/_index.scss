@@ -1,11 +1,11 @@
+/* INDEX */
+
 #index {
     .hero-slider {
         background-color: #f57c00;
-        position: relative;
-        top: -65px;
         color: #fff;
         width: 100%;
-        overflow-x: hidden;
+        margin-top: -65px;
 
         .hero-icon {
             margin-top: 64px;
@@ -45,44 +45,46 @@
         }
 
         .slider {
+            height: 600px;
+
             li {
                 padding-top: 60px;
-                height: 600px;
+                height: inherit;
+                position: absolute;
+                width: 100%;
+                display: none;
             }
 
             .s-1 {
                 background: url("../images/index/hero-slider/hero-image-1.png") no-repeat bottom 14px right -10px;
             }
+
+            .s-2 {
+                background: url("../images/index/hero-slider/hero-image-2.png") no-repeat bottom 14px right;
+            }
         }
 
         .big-next {
+            display: block;
             height: 600px;
-            background-color: #5c6bc0;
+            width: 60px;
+            background: #5c6bc0 url("../images/index/next-arrow.png") no-repeat center;
+            background-size: 18px auto;
             position: absolute;
-            width: 100%;
+            width: 60px;
             top: 0;
-            right: -105%;
+            right: -120px;
+            z-index: 1;
+            backface-visibility: hidden;
 
-            .next {
-                display: block;
-                background: url("../images/index/next-arrow.png") no-repeat center;
-                background-size: 18px auto;
-                height: inherit;
-                width: 60px;
-
-                &:hover {
-                    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-                    transform: translate3d(0, 0, 0);
-                    backface-visibility: hidden;
-                    perspective: 1000px;
-                }
+            &:hover {
+                animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+                transform: translate3d(0, 0, 0);
             }
         }
     }
 
     .what-u-want {
-        position: relative;
-        top: -65px;
         padding: 40px 0;
 
         figure {
@@ -109,13 +111,13 @@
             top: 0;
             color: #282828;
             text-align: center;
+            backface-visibility: hidden;
 
             @extend .transition-all;
 
             &:hover {
                 top: -5px;
                 transform: rotate(2deg) translate3d(0, 0, 0);
-                backface-visibility: hidden;
                 perspective: 1000px;
             }
 
@@ -139,13 +141,10 @@
 
     .process {
         padding-top: 40px;
-        position: relative;
-        top: -65px;
         background-color: #eaeaea;
-        height: 540px;
 
         .container {
-            height: 500px;
+            padding-bottom: 40px;
         }
 
         .slider-2 {
@@ -186,6 +185,18 @@
             text-align: center;
             height: 64px;
             font-size: 0;
+
+            &:before {
+                position: absolute;
+                content: " ";
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                width: 648px;
+                top: 32px;
+                background-color: #d7ccc8;
+                height: 1px;
+            }
 
             li {
                 display: inline-block;
@@ -229,6 +240,6 @@
 
     .our-background {
         text-align: center;
-        padding: 30px 0;
+        padding: 100px 0 45px 0;
     }
 }
