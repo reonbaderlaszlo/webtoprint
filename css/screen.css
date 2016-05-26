@@ -124,18 +124,14 @@ td {
 }
 
 /* TYPOGRAPHY */
-.heading-1 {
+h1 {
   font-weight: 300;
   font-size: 32px;
-  text-align: center;
 }
 
-.paragraph-1 {
+p {
   font-weight: 300;
   line-height: 20px;
-  text-align: center;
-  width: 660px;
-  margin: 15px auto;
 }
 
 /* BUTTONS */
@@ -400,6 +396,16 @@ footer li:last-child {
   padding: 40px 0;
 }
 
+#index .what-u-want h1 {
+  text-align: center;
+}
+
+#index .what-u-want p {
+  text-align: center;
+  width: 660px;
+  margin: 15px auto;
+}
+
 #index .what-u-want figure {
   margin: 0;
 }
@@ -457,6 +463,31 @@ footer li:last-child {
   background-color: #eaeaea;
 }
 
+#index .process h1 {
+  text-align: center;
+}
+
+#index .process p {
+  text-align: center;
+  width: 660px;
+  margin: 15px auto;
+}
+
+#index .process .btn.black {
+  line-height: 0;
+  position: relative;
+}
+
+#index .process .btn.black span {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 #index .process .container {
   padding-bottom: 40px;
 }
@@ -492,6 +523,7 @@ footer li:last-child {
   font-weight: 300;
   line-height: 20px;
   padding: 10px 35px 25px 0;
+  text-align: left;
 }
 
 #index .process .navigation {
@@ -564,4 +596,10 @@ footer li:last-child {
 #index .our-background {
   text-align: center;
   padding: 100px 0 45px 0;
+}
+
+#index .our-background p {
+  text-align: center;
+  width: 660px;
+  margin: 15px auto;
 }

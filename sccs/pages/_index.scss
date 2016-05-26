@@ -8,11 +8,7 @@
         margin-top: -65px;
 
         .hero-icon {
-            margin-top: 64px;            
-        }
-
-        img{
-          //  transform: scale(0.5);
+            margin-top: 64px;
         }
 
         h1 {
@@ -79,7 +75,9 @@
             top: 0;
             right: -120px;
             z-index: 1;
+
             @extend .transition-all;
+
             transition-duration: 0.2s;
 
             &:hover {
@@ -90,6 +88,16 @@
 
     .what-u-want {
         padding: 40px 0;
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            width: 660px;
+            margin: 15px auto;
+        }
 
         figure {
             margin: 0;
@@ -146,6 +154,28 @@
         padding-top: 40px;
         background-color: #eaeaea;
 
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            width: 660px;
+            margin: 15px auto;
+        }
+
+       .btn.black{
+        line-height: 0;
+        position: relative;
+            span{
+                position: absolute;
+                display: block;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+       }
+
         .container {
             padding-bottom: 40px;
         }
@@ -178,6 +208,7 @@
                 font-weight: 300;
                 line-height: 20px;
                 padding: 10px 35px 25px 0;
+                text-align: left;
             }
         }
 
@@ -200,14 +231,15 @@
                 background-color: #d7ccc8;
                 height: 1px;
             }
-            span{
+
+            span {
                 display: block;
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%,-50%) translate3d(0, 0, 0);
-
+                transform: translate(-50%, -50%) translate3d(0, 0, 0);
             }
+
             li {
                 display: inline-block;
                 margin-right: 162px;
@@ -232,7 +264,6 @@
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%) translate3d(0, 0, 0);
-
                 transition: all 0.2s ease-in-out;
 
                 &.active {
@@ -250,5 +281,11 @@
     .our-background {
         text-align: center;
         padding: 100px 0 45px 0;
+
+        p {
+            text-align: center;
+            width: 660px;
+            margin: 15px auto;
+        }
     }
 }
