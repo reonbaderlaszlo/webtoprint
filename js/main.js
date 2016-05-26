@@ -39,12 +39,7 @@ $(function() {
 
             });
 
-            $('#index .hero-slider .big-next').css({
-
-                'background-color': '#5c6bc0'
-
-            });
-
+        
         }
 
         if ($('.hero-slider .slider .s-2').hasClass('active')) {
@@ -55,12 +50,7 @@ $(function() {
 
             });
 
-            $('#index .hero-slider .big-next').css({
-
-                'background-color': '#f57c00'
-
-            });
-
+        
         }
 
     });

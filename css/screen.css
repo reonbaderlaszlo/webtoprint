@@ -201,8 +201,11 @@ p {
 
 /* HEADER */
 header {
-  height: 65px;
-  position: relative;
+  height: 101px;
+  background-color: #5c6bc0;
+}
+
+header .container {
   z-index: 1;
 }
 
@@ -314,7 +317,9 @@ footer li:last-child {
   background-color: #f57c00;
   color: #fff;
   width: 100%;
-  margin-top: -65px;
+  margin-top: -101px;
+  position: relative;
+  z-index: 0;
 }
 
 #index .hero-slider .hero-icon {
@@ -376,13 +381,15 @@ footer li:last-child {
 
 #index .hero-slider .big-next {
   display: block;
-  height: 600px;
+  height: 60px;
   width: 60px;
-  background: #5c6bc0 url("../images/index/next-arrow.png") no-repeat center;
+  background: url("../images/index/next-arrow.png") no-repeat center;
   background-size: 18px auto;
   position: absolute;
-  width: 60px;
-  top: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   right: -120px;
   z-index: 1;
   transition-duration: 0.2s;
