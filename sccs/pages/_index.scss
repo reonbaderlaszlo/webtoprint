@@ -78,9 +78,9 @@
             right: -120px;
             z-index: 1;
 
-            @extend .transition-all;
+            @include transition-all;
 
-            transition-duration: 0.2s;
+           
 
             &:hover {
                 background-size: 25px auto;
@@ -127,7 +127,7 @@
             text-align: center;
             backface-visibility: hidden;
 
-            @extend .transition-all;
+            @include transition-all;
 
             &:hover {
                 top: -5px;
@@ -266,7 +266,7 @@
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%) translate3d(0, 0, 0);
-                transition: all 0.2s ease-in-out;
+                transition: 0.2s ease-in-out;
 
                 &.active {
                     width: 64px;

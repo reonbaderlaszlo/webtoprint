@@ -146,6 +146,7 @@ p {
   line-height: 44px;
   text-align: center;
   letter-spacing: 0.100em;
+  transition: 0.5s;
 }
 
 .btn.ghost {
@@ -165,11 +166,6 @@ p {
   background-color: transparent;
   border: 1px solid #282828;
   color: #282828;
-}
-
-/* ANIMATIONS */
-.transition-all, .btn, footer a, #index .hero-slider .big-next, #index .what-u-want a {
-  transition: all 0.5s ease;
 }
 
 /* BASE */
@@ -260,6 +256,7 @@ footer a {
   font-size: 14px;
   font-weight: 300;
   color: #282828;
+  transition: 0.5s;
 }
 
 footer a:hover {
@@ -392,7 +389,7 @@ footer li:last-child {
           transform: translateY(-50%);
   right: -120px;
   z-index: 1;
-  transition-duration: 0.2s;
+  transition: 0.5s;
 }
 
 #index .hero-slider .big-next:hover {
@@ -439,6 +436,7 @@ footer li:last-child {
   text-align: center;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  transition: 0.5s;
 }
 
 #index .what-u-want a:hover {
@@ -588,7 +586,7 @@ footer li:last-child {
   top: 50%;
   -webkit-transform: translateY(-50%) translate3d(0, 0, 0);
           transform: translateY(-50%) translate3d(0, 0, 0);
-  transition: all 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 #index .process .navigation a.active {

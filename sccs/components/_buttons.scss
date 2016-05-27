@@ -10,7 +10,7 @@
     line-height: 44px;
     text-align: center;
     letter-spacing: 0.100em;
-    @extend .transition-all;
+    @include transition-all;
 
     &.ghost {
         border: solid 1px #fff;

@@ -9,7 +9,8 @@ footer {
         font-size: 14px;
         font-weight: 300;
         color: #282828;
-        @extend .transition-all;
+        @include transition-all;
+        
         &:hover{
             color: #f57c00;
         }
